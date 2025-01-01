@@ -8,6 +8,7 @@ const products = [
     id: 1,
     name: "10MM Lever Belt - Black",
     price: "Rs.11,300.00",
+    badge: "Lifetime Warranty",
     rating: 4.9,
     hoverImg: "/ProductGridImage/10mm-lever-belt-black-back.jpg",
     initialImg: "/ProductGridImage/10mm-lever-belt-black-main_1.jpg",
@@ -28,9 +29,10 @@ const products = [
   },
   {
     id: 2,
-    name: "20MM Lever Belt - Black",
-    price: "Rs.12,300.00",
-    rating: 5.9,
+    name: "10MM Lever Belt - Black/Black",
+    badge: "Lifetime Warranty",
+    price: "Rs.11,300.00",
+    rating: 4.9,
     initialImg:"/ProductGridImage/10mm-lever-belt-black-black-main.jpg",
     hoverImg:  "/ProductGridImage/10mm-lever-belt-black-black-back.jpg",
    
@@ -52,9 +54,10 @@ const products = [
   },
   {
     id: 3,
-    name: "30MM Lever Belt - Black",
-    price: "Rs.12,300.00",
-    rating: 5.9,
+    name: "10MM Lever Belt - Gray",
+    badge: "Lifetime Warranty",
+    price: "Rs.11,300.00",
+    rating: 4.9,
     hoverImg: "/ProductGridImage/10mm-lever-belt-gray-back.jpg",
     initialImg: "/ProductGridImage/10mm-lever-belt-gray-main_2.jpg",
     colors: [ 
@@ -73,9 +76,10 @@ const products = [
     ],
   }, {
     id: 4,
-    name: "40MM Lever Belt - Black",
-    price: "Rs.12,300.00",
-    rating: 5.9,
+    name: "10MM Lever Belt - Red",
+    badge: "Lifetime Warranty",
+    price: "Rs.11,300.00",
+    rating: 4.9,
     hoverImg: "/ProductGridImage/10mm-lever-belt-red-back.jpg",
     initialImg: "/ProductGridImage/10mm-lever-belt-red-main_2.jpg",
     colors: [ 
@@ -94,9 +98,10 @@ const products = [
     ],
   }, {
     id: 5,
-    name: "50MM Lever Belt - Black",
-    price: "Rs.12,300.00",
-    rating: 5.9,
+    name: "Gymreapers Strength Kit - 10MM Black",
+    badge: "New Release",
+    price: "Rs. 17,400.00",
+    rating: 4.9,
     hoverImg: "/ProductGridImage/10mm-lever-belt-black-back.jpg",
     initialImg: "/ProductGridImage/10mm-strength-kit-black-main.jpg",
     colors: [ 
@@ -115,9 +120,10 @@ const products = [
     ],
   }, {
     id: 6,
-    name: "60MM Lever Belt - Black",
-    price: "Rs.12,300.00",
-    rating: 5.9,
+    name: "Gymreapers Strength Kit - 10MM Black/Black",
+    badge: "New Release",
+    price: "Rs. 17,400.00",
+    rating: 4.9,
     hoverImg:"/ProductGridImage/10mm-lever-belt-black-black-main.jpg",
     initialImg: "/ProductGridImage/10blkblkkit.jpg",
     colors: [ 
@@ -136,9 +142,10 @@ const products = [
     ],
   }, {
     id: 7,
-    name: "70MM Lever Belt - Black",
-    price: "Rs.12,300.00",
-    rating: 5.9,
+    name: "Gymreapers Strength Kit - 10MM Gray",
+    badge: "New Release",
+    price: "Rs. 17,400.00",
+    rating: 4.9,
     hoverImg: "/ProductGridImage/10mm-lever-belt-gray-back.jpg",
     initialImg: "/ProductGridImage/10mm-strength-kit-gray-main.jpg",
     colors: [ 
@@ -158,9 +165,10 @@ const products = [
   },
   {
     id: 8,
-    name: "80MM Lever Belt - Black",
-    price: "Rs.12,300.00",
-    rating: 5.9,
+    name: "Gymreapers Strength Kit - 10MM Red",
+    badge: "New Release",
+    price: "Rs.174,00.00",
+    rating: 4.9,
     hoverImg: "/ProductGridImage/10mm-lever-belt-red-back.jpg",
     initialImg: "/ProductGridImage/10mm-strength-kit-red-main.jpg",
     colors: [ 
@@ -178,8 +186,6 @@ const products = [
       { size: "2XL (39-46\")", price: "25,500.00" },
     ],
   },
- 
- 
 ];
 
 
@@ -187,18 +193,23 @@ const products = [
 function ProductDetails() {
     return (
         <>
-        
+        <h2 className="text-4xl font-bold text-gray-800 p-8 text-center">BEST SELLING GEAR
+
+</h2>  
         {/* <HeroSection/> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-6 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 p-6">
+        
           
         {products.map((product) => (
           
           <Link
             to={`/product/${product.id}`}
             key={product.id}
-            className="group border border-gray-200 rounded-lg overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300"
+             className="group border border-gray-200 rounded-lg overflow-hidden bg-white shadow-md hover:shadow-lg transition-transform transform hover:scale-105 duration-300"
           >
-           
+           <div className="top-2 left-2 bg-red-500 text-white text-xs font-semibold py-1 px-2 rounded">
+                {product.badge}
+              </div>
 
             {/* Image Section */}
             <div className="relative w-full md:h-72 bg-gray-100">
@@ -234,7 +245,7 @@ function ProductDetails() {
                   <div
                     key={index}
                     className="w-4 h-4 rounded-full border border-red-600"
-                    style={{ backgroundColor: color }}
+                    style={{ backgroundColor: 'skyblue' }}
                   ></div>
                 ))}
               </div>
@@ -242,6 +253,8 @@ function ProductDetails() {
           </Link>
         ))}
       </div>
+    
+      
       </>
     );
   }

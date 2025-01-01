@@ -7,10 +7,12 @@ import ProductsFifthList from './ProductFifthList';
 function ProductFifthGrid() {
     return (
         <>
-        
+         <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">BEST SELLING GYM ACCESSORIES
+
+</h2>  
         {/* <HeroSection/> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-6 ">
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 p-6 ">
+               
         {ProductsFifthList.map((product) => (
           
           <Link
@@ -21,7 +23,7 @@ function ProductFifthGrid() {
            
 
             {/* Image Section */}
-            <div className="relative w-full  md:h-72 bg-gray-100">
+            <div className="relative w-full  md:h-72 lg:h-96 bg-gray-100">
               <img
                 src={product.initialImg}
                 alt={product.name}

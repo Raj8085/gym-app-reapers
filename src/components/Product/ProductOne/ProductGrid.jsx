@@ -3,6 +3,7 @@
 // // import { Badge } from "@/components/ui/badge"
 // // import { Link } from 'react-router-dom'
 
+import CategoryGrid from "@/components/Category-Grid/CategoryGrid"
 import SectionOne, { SectionSecond } from "../SectionOneImage/SectionOne"
 import ProductDetails from "./ProductDetails/ProductDetails"
 import ProductDetailsTwo from "./ProductDetails/ProductTwoDetails"
@@ -586,6 +587,7 @@ const ProductGrid = () => {
       <SectionSecond/>
       <ProductFourthGrid/>
       <ProductFifthGrid/>
+      <CategoryGrid/>
     </div>
   )
 }

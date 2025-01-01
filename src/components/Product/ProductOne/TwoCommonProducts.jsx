@@ -2,12 +2,13 @@ const productsTwoList = [
     {
       id: 1,
       name: "200MM Lever Belt - Black",
+      badge: "Lifetime Warranty",
       price: "Rs.11,300.00",
       rating: 4.9,
       hoverImg: "/MenAppral/heavy-weight-hoodie-black-white-front_b4e0e295-0590-446d-8712-15c785dc223a.jpg",
       initialImg: "/MenAppral/core-set-black-white-main.png",
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+        "/MenAppral/core-set-black-white-main.png",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
@@ -24,6 +25,7 @@ const productsTwoList = [
     {
       id: 2,
       name: "2300MM Lever Belt - Black",
+      badge: "Lifetime Warranty",
       price: "Rs.12,300.00",
       rating: 5.9,
       initialImg:"/MenAppral/ascend-set-black-black.jpg",
@@ -31,7 +33,7 @@ const productsTwoList = [
      
   
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+        "/MenAppral/ascend-set-black-black.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
@@ -48,12 +50,14 @@ const productsTwoList = [
     {
       id: 3,
       name: "300MM Lever Belt - Black",
+      badge: "Lifetime Warranty",
+
       price: "Rs.12,300.00",
       rating: 5.9,
       hoverImg: "/MenAppral/BlackLSFront-min_cb79bd20-0927-4cb9-bd98-c4ac62fcfa39.jpg",
       initialImg: "/MenAppral/long-sleeve-shirt-bundle-black-main.jpg",
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+        "/MenAppral/long-sleeve-shirt-bundle-black-main.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
@@ -69,12 +73,13 @@ const productsTwoList = [
     }, {
       id: 4,
       name: "40MM Lever Belt - Black",
+      badge: "Lifetime Warranty",
       price: "Rs.12,300.00",
       rating: 5.9,
       hoverImg: "/MenAppral/ascend-hoodie-black-back.jpg",
       initialImg: "/MenAppral/ascend-hoodie-black-white-front.jpg",
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+        "/MenAppral/ascend-hoodie-black-white-front.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
@@ -90,12 +95,13 @@ const productsTwoList = [
     }, {
       id: 5,
       name: "50MM Lever Belt - Black",
+      badge: "New Release",
       price: "Rs.12,300.00",
       rating: 5.9,
       hoverImg: "/MenAppral/short-sleeve-shirt-black-back.jpg",
       initialImg: "/MenAppral/short-sleeve-shirt-black-main.jpg",
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+       "/MenAppral/short-sleeve-shirt-black-main.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
@@ -112,11 +118,12 @@ const productsTwoList = [
       id: 6,
       name: "60MM Lever Belt - Black",
       price: "Rs.12,300.00",
+      badge: "New Release",
       rating: 5.9,
       hoverImg:"/MenAppral/training-shorts-black-front.jpg",
       initialImg: "/MenAppral/gr-training-shorts-3-pack-red-blu-blk_1024.jpg",
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+      "/MenAppral/gr-training-shorts-3-pack-red-blu-blk_1024.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
@@ -133,11 +140,12 @@ const productsTwoList = [
       id: 7,
       name: "70MM Lever Belt - Black",
       price: "Rs.12,300.00",
+      badge: "New Release",
       rating: 5.9,
       hoverImg: "/MenAppral/training-shorts-black-back (1).jpg",
       initialImg: "/MenAppral/training-shorts-black-front.jpg",
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+        "/MenAppral/training-shorts-black-front.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
@@ -155,11 +163,12 @@ const productsTwoList = [
       id: 8,
       name: "80MM Lever Belt - Black",
       price: "Rs.12,300.00",
+      badge: "New Release",
       rating: 5.9,
       hoverImg: "/MenAppral/training-shorts-black-back (1).jpg",
       initialImg: "/MenAppral/Black-min.jpg",
       colors: [ 
-        "/ProductPage/gravestone_backpack_lever2.jpg",
+        "/MenAppral/Black-min.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",
         "/ProductPage/gravestone_backpack_lever_green.jpg",
         "/ProductPage/gravestone_backpack_lever2.jpg",

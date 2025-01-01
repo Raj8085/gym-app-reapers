@@ -2,6 +2,7 @@ const ProductsThreeList = [
     {
       id: 1,
       name: "Cropped Zip-Up Hoodie - Black",
+    badge: "New Release",
       price: "Rs.5,700.00",
       rating: 4.9,
       hoverImg: "/WomenAppral/black-white-cropped-hoodie-back-detail.jpg",
@@ -24,6 +25,7 @@ const ProductsThreeList = [
     {
       id: 2,
       name: "Women's Performance Running Jacket",
+    badge: "New Release",
       price: "Rs.5700",
       rating: 5.9,
       initialImg:"/WomenAppral/Black-Performance-running-jacket-main.jpg",
@@ -47,6 +49,7 @@ const ProductsThreeList = [
     {
       id: 3,
       name: "Women's Performance Quarter Zip",
+    badge: "New Release",
       price: "Rs. 5,700.00",
       rating: 5.9,
       hoverImg: "/WomenAppral/womens-performance-1-4-zip-black-back.jpg",
@@ -69,6 +72,7 @@ const ProductsThreeList = [
       id: 4,
       name: "40MM Lever Belt - Black",
       price: "Rs. 3,500.00",
+    badge: "New Release",
       rating: 5.9,
       hoverImg: "/WomenAppral/infinity-leggings-black-back.png",
       initialImg: "/WomenAppral/infinity-leggings-black-main-image.jpg",
@@ -89,6 +93,7 @@ const ProductsThreeList = [
     }, {
       id: 5,
       name: "Infinity Shorts 3-Packs",
+    badge: "Lifetime Warranty",
       price: "Rs. 7,000.00",
       rating: 5.9,
       hoverImg: "/WomenAppral/emerald-infinity-shorts-front-full-shot-studio_81af8b5c-183b-4e8d-bca5-d29666c54333.jpg",
@@ -110,6 +115,7 @@ const ProductsThreeList = [
     }, {
       id: 6,
       name: "Infinity Shorts - Black",
+    badge: "Lifetime Warranty",
       price: "Rs. 2,600.00",
       rating: 5.9,
       hoverImg:"/MenAppral/training-shorts-black-front.jpg",
@@ -131,6 +137,7 @@ const ProductsThreeList = [
     }, {
       id: 7,
       name: "Legacy Shorts - Black",
+    badge: "Lifetime Warranty",
       price: "Rs. 3,700.00",
       rating: 5.9,
       hoverImg: "/MenAppral/training-shorts-black-back (1).jpg",
@@ -153,6 +160,7 @@ const ProductsThreeList = [
     {
       id: 8,
       name: "Victory Shorts - Black",
+    badge: "Lifetime Warranty",
       price: "priceRs. 3,100.00",
       rating: 5.9,
       hoverImg: "/MenAppral/training-shorts-black-back (1).jpg",

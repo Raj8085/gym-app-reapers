@@ -77,17 +77,17 @@
 
 
 
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useFilters } from '../../../../components/ContextCart/FilterContext';
-import ProductFilters from '../../../../components/ContextCart/ProductFilters';
-import { Filter, X } from 'lucide-react';
+// import ProductFilters from '../../../../components/ContextCart/ProductFilters';
+// import { Filter, X } from 'lucide-react';
 import ProductsFourthList from './FourthComponentList';
 
 
 function ProductFourthGrid() {
   const { filters, clearFilters } = useFilters();
-  const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+  // const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
   // Filter products based on all criteria
   const filteredProducts = ProductsFourthList.filter(product => {
@@ -118,16 +118,16 @@ function ProductFourthGrid() {
   return (
     <div className="relative">
       {/* Mobile Filter Toggle Button */}
-      <button
+      {/* <button
         className="fixed bottom-4 right-4 z-50 md:hidden bg-black text-red-900 p-4 rounded-full shadow-lg"
         onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
       >
         {isMobileFilterOpen ? <X size={24} /> : <Filter size={24} />}
-      </button>
+      </button> */}
 
       <div className="flex flex-col md:flex-row gap-6 p-4 md:p-6">
         {/* Filters */}
-        <aside className={`
+        {/* <aside className={`
           fixed inset-0 z-40 bg-white md:relative md:bg-transparent
           transform transition-transform duration-300 ease-in-out
           ${isMobileFilterOpen ? 'translate-x-0' : '-translate-x-full'}
@@ -142,11 +142,11 @@ function ProductFourthGrid() {
             </div>
             <ProductFilters />
           </div>
-        </aside>
+        </aside> */}
 
         {/* Product Grid */}
         <div className="flex-1">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {filteredProducts.map((product) => (
               <Link
                 to={`/productsfourth/${product.id}`}
@@ -215,5 +215,4 @@ function ProductFourthGrid() {
     </div>
   );
 }
-
 export default ProductFourthGrid;

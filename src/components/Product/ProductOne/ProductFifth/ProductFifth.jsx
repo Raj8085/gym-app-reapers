@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductsFifthList from './ProductFifthList';
+import { useCart } from '@/components/ContextCart/CartContext';
 
 
 function ProductFifthDetails() {
   const { id } = useParams();
+   const { addToCart } = useCart();
   const product = ProductsFifthList.find(p => p.id === parseInt(id));
   const [selectedColor, setSelectedColor] = useState(0);
   const [selectedSize, setSelectedSize] = useState(0);
@@ -12,6 +14,19 @@ function ProductFifthDetails() {
   if (!product) {
     return <div className="text-center text-lg text-red-500">Product not found</div>;
   }
+  const handleAddToCart = () => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.colors[selectedColor],
+      selectedColor,
+      selectedSize: product.sizes[selectedSize].size,
+      quantity: 1
+    });
+    
+    alert(`${product.name} has been added to your cart.`);
+  };
 
   return (
     <div className="container mx-auto p-4">
@@ -66,6 +81,12 @@ function ProductFifthDetails() {
               ))}
             </div>
           </div>
+          <button 
+            className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
+            onClick={handleAddToCart}
+          >
+            Add to cart
+            </button>
         </div>
       </div>
     </div>

@@ -207,16 +207,16 @@
 
 
 
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useFilters } from '../../../../components/ContextCart/FilterContext';
-import ProductFilters from '../../../../components/ContextCart/ProductFilters';
+// import ProductFilters from '../../../../components/ContextCart/ProductFilters';
 import ProductsThreeList from './ThirdCommonProduct';
-import { Filter, X } from 'lucide-react';
+// import { Filter, X } from 'lucide-react';
 
-function ProductThirdGrid() {
+function ProductThirdGrid() { 
   const { filters, clearFilters } = useFilters();
-  const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+  // const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
   // Filter products based on all criteria
   const filteredProducts = ProductsThreeList.filter(product => {
@@ -246,17 +246,17 @@ function ProductThirdGrid() {
 
   return (
     <div className="relative">
-      {/* Mobile Filter Toggle Button */}
-      <button
+        <h2 className="text-xl font-bold text-gray-800 mb-6 mt-10  text-center">BEST SELLING WOMEN&apos;S APPAREL</h2>
+
+      {/* <button
         className="fixed bottom-4 right-4 z-50 md:hidden bg-black text-red-900 p-4 rounded-full shadow-lg"
         onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
       >
         {isMobileFilterOpen ? <X size={24} /> : <Filter size={24} />}
-      </button>
+      </button> */}
 
       <div className="flex flex-col md:flex-row gap-6 p-4 md:p-6">
-        {/* Filters */}
-        <aside className={`
+        {/* <aside className={`
           fixed inset-0 z-40 bg-white md:relative md:bg-transparent
           transform transition-transform duration-300 ease-in-out
           ${isMobileFilterOpen ? 'translate-x-0' : '-translate-x-full'}
@@ -271,19 +271,23 @@ function ProductThirdGrid() {
             </div>
             <ProductFilters />
           </div>
-        </aside>
+        </aside> */}
 
         {/* Product Grid */}
         <div className="flex-1">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {filteredProducts.map((product) => (
               <Link
                 to={`/productsthree/${product.id}`}
                 key={product.id}
                 className="group border border-gray-200 rounded-lg overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300"
               >
+                 {/* <div className="top-2 left-2 bg-red-500 text-white text-xs font-semibold py-1 px-2 rounded">
+                {product.badge}
+              </div> */}
+
                 {/* Image Section */}
-                <div className="relative w-full sm:h-56 md:h-64 lg:h-72 bg-gray-100">
+                <div className="relative w-full sm:h-56 md:h-64 lg:h-96 bg-gray-100">
                   <img
                     src={product.initialImg}
                     alt={product.name}

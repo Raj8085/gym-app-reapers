@@ -254,7 +254,7 @@ function ProductFourthDetails() {
 
           <div className="size-selection">
             <h3 className="text-lg font-semibold text-gray-700 mb-2">Sizes:</h3>
-            <div className="flex gap-4">
+            <div className="grid grid-cols-2 gap-2">
               {product.sizes.map((size, index) => (
                 <button
                   key={index}
