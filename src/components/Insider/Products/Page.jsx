@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import { FilterSidebar } from "../../../components/Insider/Products/FilterSideBar"
+import { FilterSidebar } from "../../../../src/components/Insider/Products/FilterSidebar"
 import { ProductGrid } from "../../../components/Insider/Products/ProductGrid"
 
 // This would typically come from an API
@@ -43,27 +43,29 @@ const filterSections = [
 const initialProducts = [
   {
     id: "1",
-    name: "10MM Lever Belt - Black/Black",
-    price: "11300.00",
-    rating: 4.9,
-    colors: ["black", "red", "blue", "green", "gray"],
-    image: "/ProductGridImage/10mm-lever-belt-black-back.jpg",
+    name: "10MM Lever Belt - Red",
+    price: 11300,
+    rating: 4.5,
+    colors: ["red", "black", "blue", "green"],
+    image: "/ProductGridImage/10mm-lever-belt-red-main_2.jpg",
   },
+
   {
     id: "2",
-    name: "10MM Lever Belt - Black",
-    price: "11,300.00",
-    rating: 4.5,
-    colors: ["black", "red", "blue", "green"],
-    image: "/ProductGridImage/10mm-lever-belt-black-main_1.jpg",
-  },
-  {
-    id: "3",
     name: "13mm Lever Belt",
     price: "12,200.00",
     rating: 5.0,
     colors: ["black"],
     image: "/LeverBelt/13mm-lever-belt-black-main.jpg",
+  },
+ 
+  {
+    id: "3",
+    name: "10MM Lever Belt - Black",
+    price: "11,300.00",
+    rating: 4.5,
+    colors: ["black", "red", "blue", "green"],
+    image: "/ProductGridImage/10mm-lever-belt-black-main_1.jpg",
   },
   {
     id: "4",
@@ -83,11 +85,11 @@ const initialProducts = [
   },
   {
     id: "6",
-    name: "10MM Lever Belt - Red",
-    price: 11300,
-    rating: 4.5,
-    colors: ["red", "black", "blue", "green"],
-    image: "/ProductGridImage/10mm-lever-belt-red-main_2.jpg",
+    name: "10MM Lever Belt - Black/Black",
+    price: "11300.00",
+    rating: 4.9,
+    colors: ["black", "red", "blue", "green", "gray"],
+    image: "/ProductGridImage/10mm-lever-belt-black-back.jpg",
   },
   {
     id: "7",
@@ -160,184 +162,6 @@ const initialProducts = [
     image: "/LeverBelt/gravestone_duffle_lever_gunmetal.jpg",
   }  
 ]
-// const initialProducts = [
-//   {
-//     id: 1,
-//     name: "10MM Lever Belt - Black",
-//     price: "Rs.11,100.00",
-//     rating: 4.9,
-//     hoverImg: "/ProductGridImage/10mm-lever-belt-black-back.jpg",
-//     initialImg: "/ProductGridImage/10mm-lever-belt-black-main_1.jpg",
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   },
-//   {
-//     id: 2,
-//     name: "20MM Lever Belt - Black",
-//     price: "Rs.12,300.00",
-//     rating: 5.9,
-//     initialImg:"/ProductGridImage/10mm-lever-belt-black-black-main.jpg",
-//     hoverImg:  "/ProductGridImage/10mm-lever-belt-black-black-back.jpg",
-   
-
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   },
-//   {
-//     id: 3,
-//     name: "30MM Lever Belt - Black",
-//     price: "Rs.12,300.00",
-//     rating: 5.9,
-//     hoverImg: "/ProductGridImage/10mm-lever-belt-gray-back.jpg",
-//     initialImg: "/ProductGridImage/10mm-lever-belt-gray-main_2.jpg",
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   }, {
-//     id: 4,
-//     name: "40MM Lever Belt - Black",
-//     price: "Rs.12,300.00",
-//     rating: 5.9,
-//     hoverImg: "/ProductGridImage/10mm-lever-belt-red-back.jpg",
-//     initialImg: "/ProductGridImage/10mm-lever-belt-red-main_2.jpg",
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   }, {
-//     id: 5,
-//     name: "50MM Lever Belt - Black",
-//     price: "Rs.12,300.00",
-//     rating: 5.9,
-//     hoverImg: "/ProductGridImage/10mm-lever-belt-black-back.jpg",
-//     initialImg: "/ProductGridImage/10mm-strength-kit-black-main.jpg",
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   }, {
-//     id: 6,
-//     name: "60MM Lever Belt - Black",
-//     price: "Rs.12,300.00",
-//     rating: 5.9,
-//     hoverImg:"/ProductGridImage/10mm-lever-belt-black-black-main.jpg",
-//     initialImg: "/ProductGridImage/10blkblkkit.jpg",
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   }, {
-//     id: 7,
-//     name: "70MM Lever Belt - Black",
-//     price: "Rs.12,300.00",
-//     rating: 5.9,
-//     hoverImg: "/ProductGridImage/10mm-lever-belt-gray-back.jpg",
-//     initialImg: "/ProductGridImage/10mm-strength-kit-gray-main.jpg",
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   },
-//   {
-//     id: 8,
-//     name: "80MM Lever Belt - Black",
-//     price: "Rs.12,300.00",
-//     rating: 5.9,
-//     hoverImg: "/ProductGridImage/10mm-lever-belt-red-back.jpg",
-//     initialImg: "/ProductGridImage/10mm-strength-kit-red-main.jpg",
-//     colors: [ 
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//       "/ProductPage/gravestone_backpack_lever_green.jpg",
-//       "/ProductPage/gravestone_backpack_lever2.jpg",
-//     ],
-//     sizes: [
-//       { size: "XS (24-31\")", price: "24,900.00" },
-//       { size: "S (26-33\")", price: "24,500.00" },
-//       { size: "M (30-36\")", price: "24,800.00" },
-//       { size: "L (34-41\")", price: "25,000.00" },
-//       { size: "XL (38-45\")", price: "25,300.00" },
-//       { size: "2XL (39-46\")", price: "25,500.00" },
-//     ],
-//   },
- 
- 
-// ];
 
 export function ProductsPageInside() {
   const [products, setProducts] = useState(initialProducts)

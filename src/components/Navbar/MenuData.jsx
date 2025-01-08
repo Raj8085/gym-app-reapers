@@ -29,7 +29,7 @@ export const menuCategories = {
       sections: [
         {
           title: 'GYM EQUIPMENT',
-          items: ['Barbells', 'Weight Plates', 'Dumbbells', 'Kettlebells', 'Resistance Bands', 'SHOP ALL']
+          items: ['Hip Bands', 'Barbell Squat Pad', 'Ankle Straps', 'Arm Blaster', 'Resistance Bands', 'SHOP ALL']
         },
       ]
     },
